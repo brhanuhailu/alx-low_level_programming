@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
 * main - Print combinations of two digit numbers
 *
