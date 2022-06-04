@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
-* main - main block
-* Description: Print alphabets in lower case.
-* Return: 0 on success
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char i;
-	
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		putchar(i);
-	}
-	putchar('\n');
-	return (0);
+
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+		putchar('\n');
+
+return (0);
 }
