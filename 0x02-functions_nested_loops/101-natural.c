@@ -9,17 +9,17 @@
  */
 int main(void)
 {
-	int j = 1;
-	int j = 0;
+	int i = 1;
+	int total = 0;
 
-	while (j < 1024)
+	while (i < 1024)
 	{
-		if (j % 3 == 0)
-			total += j;
-		else if (j % 5 == 0)
-			total += j;
+		if (i % 3 == 0)
+			total += i;
+		else if (i % 5 == 0)
+			total += i;
 
-		j++;
+		i++;
 	}
 	printf("%d\n", total);
 
