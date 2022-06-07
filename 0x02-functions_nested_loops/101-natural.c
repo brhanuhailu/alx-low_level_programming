@@ -9,18 +9,19 @@
  */
 int main(void)
 {
-	int inial = 1;
-	int total = 0;
+	int j = 1;
+	int j = 0;
 
-	while (inial < 1024)
+	while (j < 1024)
 	{
-		if (inial % 3 == 0)
-			total += inial;
-		else if (inial % 5 == 0)
-			total += inial;
+		if (j % 3 == 0)
+			total += j;
+		else if (j % 5 == 0)
+			total += j;
 
-		inial++;
+		j++;
 	}
 	printf("%d\n", total);
 
 	return (0);
+}
