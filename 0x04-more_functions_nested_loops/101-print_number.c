@@ -1,47 +1,35 @@
 #include "main.h"
 
 /**
- * print_number - Function that prints an integer.
- * @n: int type number
- * Description: Can only use _putchar to print.
- */
+* print_number - prints # using _putchar function
+* @n: the integer to print
+*
+* Return: void
+*/
 void print_number(int n)
 {
-	long m; /* power of 10 */
-	int c; /* boolean check */
-	long num; /* convert int to long */
+	int copy, nth, size = 1, ones = n % 10;
 
-	num = n;
-	/* negatives */
-	if (num < 0)
+	n /= 10;
+	copy = n;
+	if (ones < 0)
 	{
-		num *= -1;
+		ones *= -1, copy *= -1, n *= -1;
 		_putchar('-');
 	}
-
-	/* count up */
-	m = 1;
-	c = 1;
-	while (c)
+	if (copy > 0)
 	{
-		if (num / (m * 10) > 0)
-			m *= 10;
-		else
-			c = 0;
-	}
-
-	/* count down */
-	while (num >= 0)
-	{
-		if (m == 1)
+		while (copy / 10 != 0)
 		{
-			_putchar(num % 10 + '0');
-			num = -1;
+			copy /= 10, size *= 10;
 		}
-		else
+		while (size > 0)
 		{
-			_putchar((num / m % 10) + '0');
-			m /= 10;
+			nth = n / size;
+			_putchar('0' + nth);
+			n -= nth * size;
+			size /= 10;
 		}
 	}
+	_putchar('0' + ones);
 }
