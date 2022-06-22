@@ -4,6 +4,7 @@
  * wildcmp - compare two strings with "wildcard expansion" capabilities
  * @s1: string 1
  * @s2: string 2
+ *@findsrc: find the source
  * Return: 1 if strings can be considered identical, else 0
  */
 
