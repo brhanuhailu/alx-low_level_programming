@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * number - function to calculate number of words
  * @str: string being passed to check for words
