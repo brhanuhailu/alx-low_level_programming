@@ -7,11 +7,10 @@
  */
 int str_len(char *str)
 {
-	int len;
-
-	for (len = 0; *str != '\0'; len++)
-		len++, str++;
-	return (len / 2);
+   int len;
+   for (len = 0; *str != '\0'; len++)
+	   len++, str++;
+   return (len / 2);
 }
 /**
  * _calloc - allocates memory for an array using malloc
@@ -23,7 +22,6 @@ void *_calloc(unsigned int bytes, unsigned int size)
 {
 	unsigned int i;
 	char *p;
-
 	if (bytes == 0 || size == 0)
 		return (NULL);
 	if (size >= UINT_MAX / bytes || bytes >= UINT_MAX / size)
